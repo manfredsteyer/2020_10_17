@@ -7,13 +7,13 @@ const routes: Routes = [
     pathMatch: 'full',
     redirectTo: 'dashboard',
   },
-  {
-    path: 'dashboard',
-    loadChildren: () =>
-      import('./dashboard/dashboard.module').then(
-        (module) => module.DashboardModule
-      ),
-  },
+  // {
+  //   path: 'dashboard',
+  //   loadChildren: () =>
+  //     import('./dashboard/dashboard.module').then(
+  //       (module) => module.DashboardModule
+  //     ),
+  // },
 ];
 
 @NgModule({
