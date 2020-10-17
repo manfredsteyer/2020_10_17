@@ -10,8 +10,8 @@ const routes: Routes = [
   {
     path: 'dashboard',
     loadChildren: () =>
-      import('./dashboard/dashboard-routing.module').then(
-        (module) => module.DashboardRoutingModule
+      import('./dashboard/dashboard.module').then(
+        (module) => module.DashboardModule
       ),
   },
 ];
